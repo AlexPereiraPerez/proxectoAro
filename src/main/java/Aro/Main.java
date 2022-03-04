@@ -12,7 +12,7 @@ public class Main {
         String saida =
                 "A coordenada X é "+Aro.getCoordenadaX()+
                 "\nA coordenada Y é "+Aro.getCoordenadaY()+
-                "\nO radio é "+Aro.obterRadio();
+                "\nO radio é "+Aro.getRadio();
         Aro.setCoordenadaX(35);
         Aro.setCoordenadaY(20);
         Aro.establecerRadio(4.2);
