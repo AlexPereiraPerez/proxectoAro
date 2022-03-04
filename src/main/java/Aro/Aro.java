@@ -23,16 +23,6 @@ public class Aro {
     }
 
     
-    
-    
-    
-    
-
-
-
-
-
-
     public double obterDiametro() {
         return getRadio() * 2;
     }
@@ -55,13 +45,6 @@ public class Aro {
         setCoordenadaY(getCoordenadaY() + trasladarY);
     }
 
-    
-    
-    
-    
-    
-    
-    
     /**
      * @return the coordenadaX
      */
