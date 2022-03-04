@@ -19,7 +19,7 @@ public class Aro {
     public Aro(int valorX, int valorY, double valorRadio) {
         coordenadaX = valorX;
         coordenadaY = valorY;
-        setRadio(valorRadio);
+        establecerRadio(valorRadio);
     }
 
     

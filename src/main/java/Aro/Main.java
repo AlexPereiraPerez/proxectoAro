@@ -15,7 +15,7 @@ public class Main {
                 "\nO radio é "+Aro.obterRadio();
         Aro.setCoordenadaX(35);
         Aro.setCoordenadaY(20);
-        Aro.setRadio(4.2);
+        Aro.establecerRadio(4.2);
         DecimalFormat dousDixitos = new DecimalFormat("0.00");
         saida+="\nO diámetro é "+dousDixitos.format(Aro.obterDiametro());
         saida+="\nA circunferencia é "+dousDixitos.format(Aro.obterCircunferencia());
