@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 /**
  * Pruebas de refactorización en NetBeans con la clase Circulo
- * @author profesor
+ * @author Álex Pereira
  */
 public class Main {
     public static void main(String[] args) {

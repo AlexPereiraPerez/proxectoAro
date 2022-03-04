@@ -1,6 +1,6 @@
 /**
  * Probas para a clase Circulo
- * @author profesor
+ * @author Álex Pereira
  */
 package circulo;
 
