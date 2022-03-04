@@ -22,21 +22,14 @@ public class Aro {
         establecerRadio(valorRadio);
     }
 
-    public void establecerX(int valorX) {
-        setCoordenadaX(valorX);
-    }
+    
+    
+    
+    
+    
 
-    public int obterX() {
-        return getCoordenadaX();
-    }
 
-    public void establecerY(int valorY) {
-        setCoordenadaY(valorY);
-    }
 
-    public int obterY() {
-        return getCoordenadaY();
-    }
 
     public void establecerRadio(double valorRadio) {
 
@@ -69,6 +62,13 @@ public class Aro {
         setCoordenadaY(getCoordenadaY() + trasladarY);
     }
 
+    
+    
+    
+    
+    
+    
+    
     /**
      * @return the coordenadaX
      */
