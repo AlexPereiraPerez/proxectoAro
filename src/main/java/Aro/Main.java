@@ -19,7 +19,7 @@ public class Main {
         DecimalFormat dousDixitos = new DecimalFormat("0.00");
         saida+="\nO diámetro é "+dousDixitos.format(Aro.obterDiametro());
         saida+="\nA circunferencia é "+dousDixitos.format(Aro.obterCircunferencia());
-        saida+="\nA área é "+dousDixitos.format(Aro.obterArea());
+        saida+="\nA área é "+dousDixitos.format(Aro.obterSuperfice());
         System.out.println(saida);
         
         System.out.println(saida);
