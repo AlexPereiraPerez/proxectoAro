@@ -7,76 +7,13 @@ package aro;
 public class Aro {
 
     private static final double LIMITERADIO = 0.0;
-
     /**
      * Obter o valor da constente MINIMO co valor 0.0 = a constante LIMITERADIO
      */
     public static final double MINIMO = LIMITERADIO;
- 
     private int coordenadaX;
     private int coordenadaY;
     private double radio;
-
-    /**
-     * Constructor da clase Aro
-     */
-    public Aro() {
-    }
-
-    /**
-     * Constructor
-     * @param valorX  = a coordenada X
-     * @param valorY  = a coordenada Y
-     * @param valorRadio 
-     */
-    public Aro(int valorX, int valorY, double valorRadio) {
-        coordenadaX = valorX;
-        coordenadaY = valorY;
-        setRadio(valorRadio);
-    }
-
-    /**
-     *
-     * @return Diametro
-     */
-    public double obterDiametro() {
-        return getRadio() * 2;
-    }
-
-    /**
-     *
-     * @return Circunrerencia
-     */
-    public double obterCircunferencia() {
-        return Math.PI * obterDiametro();
-    }
-
-    /**
-     *
-     * @return Superficie
-     */
-    public double obterSuperfice() {
-        return Math.PI * getRadio() * getRadio();
-    }
-
-    /**
-     *
-     * @return coordenadas.
-     */
-    @Override
-    public String toString() {
-        return "Centro = [" + getCoordenadaX() + "," + getCoordenadaY() + "]; Radio = " + getRadio();
-    }
-
-    /**
-     *
-     * @param trasladarX
-     * @param trasladarY
-     */
-    public void trasladarCentro(int trasladarX, int trasladarY){
-        setCoordenadaX(getCoordenadaX() + trasladarX);
-        setCoordenadaY(getCoordenadaY() + trasladarY);
-    }
 
     /**
      * @return the coordenadaX
@@ -118,5 +55,67 @@ public class Aro {
      */
     public void setRadio(double radio) {
         this.radio = radio < MINIMO ? MINIMO : radio;
+    }    
+    
+    
+    /**
+     * Constructor da clase Aro
+     */
+    public Aro() {
+    }
+
+    /**
+     * Constructor
+     * @param valorX  = a coordenada X
+     * @param valorY  = a coordenada Y
+     * @param valorRadio 
+     */
+    public Aro(int valorX, int valorY, double valorRadio) {
+        coordenadaX = valorX;
+        coordenadaY = valorY;
+        radio = valorRadio;
+    }
+
+    /**
+     *
+     * @return Diametro
+     */
+    public double obterDiametro() {
+        return radio * 2;
+    }
+
+    /**
+     *
+     * @return Circunrerencia
+     */
+    public double obterCircunferencia() {
+        return Math.PI * obterDiametro();
+    }
+
+    /**
+     *
+     * @return Superficie
+     */
+    public double obterSuperfice() {
+        return Math.PI * getRadio() * getRadio();
+    }
+
+    /**
+     *
+     * @return coordenadas.
+     */
+    @Override
+    public String toString() {
+        return "Centro = [" + coordenadaX + "," + coordenadaY + "]; Radio = " + radio;
+    }
+
+    /**
+     *
+     * @param trasladarX
+     * @param trasladarY
+     */
+    public void trasladarCentro(int trasladarX, int trasladarY){
+        coordenadaX = coordenadaX + trasladarX;
+        coordenadaY = coordenadaY + trasladarY;
     }
 }
