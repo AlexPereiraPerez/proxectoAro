@@ -9,7 +9,7 @@ public class Aro {
     private static final double LIMITERADIO = 0.0;
 
     /**
-     * Obter o valor da constente MINIMO
+     * Obter o valor da constente MINIMO co valor 0.0 = a constante LIMITERADIO
      */
     public static final double MINIMO = LIMITERADIO;
  
@@ -25,9 +25,9 @@ public class Aro {
 
     /**
      * Constructor
-     * @param valorX
-     * @param valorY
-     * @param valorRadio
+     * @param valorX  = a coordenada X
+     * @param valorY  = a coordenada Y
+     * @param valorRadio 
      */
     public Aro(int valorX, int valorY, double valorRadio) {
         coordenadaX = valorX;
