@@ -2,8 +2,9 @@
  * Probas para a clase Aro
  * @author Álex Pereira
  */
-package Aro;
+package aro;
 
+import aro.Aro;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
